@@ -1,0 +1,144 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    align-items: center;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    display: flex;
+    font-family: 'Dosis', 'sans-serif';
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.card{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255 ,255,0.75);
+    border: 1px solid rgba(255, 255 ,255,0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 55 ,35,0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255 ,255,0.30);
+    border: 1px solid rgba(255, 255 ,255,0.34);
+    flex-basis: 400px;
+    padding: 40px 35px;
+    text-align: center;
+    
+
+
+}
+
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+
+}
+
+.weather-icon h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather-icon h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20;
+    margin-top: 20px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px ;
+    margin-top: 10px;
+    font-size: 50px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .search input{
+        width: 150px;
+    }
+}
